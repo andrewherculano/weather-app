@@ -23,26 +23,26 @@
     </header>
 
     <section id="search-city-name">
-      <form action="">
+      <form data-js="search-city">
         <label class="sr-only">Insira o nome de uma cidade</label>
-        <input type="text" placeholder="Insira o nome de uma cidade" autofocus>
+        <input type="text" name="city" placeholder="Insira o nome de uma cidade" autofocus>
       </form>
     </section>
 
     <section id="show-info-wheater">
-      <div class="show-info">
-        <img id="img-card" src="./src/day.svg" alt="">
+      <div data-js="show-card" class="show-info display-none">
+        <img data-js="img-card" id="img-card" src="#">
 
-        <div class="show-icon">
-          <img src="./src/icons/5.svg" alt="">
+        <div data-js="show-weather-icon" class="show-icon">
+          <!-- <img src="#" alt="Icone clima"> -->
         </div>
 
         <div class="show-wheater-details">
-          <h2>TOKYO</h2>
+          <h2 data-js="city-name">CIDADE</h2>
 
-          <h3>ENSOLARADO</h3>
+          <h3 data-js="city-weather">CLIMA</h3>
 
-          <span>12.5</span>
+          <span data-js="city-temperature">00</span>
           <span>°C</span>
         </div>
       </div>
@@ -53,6 +53,7 @@
     </footer>
   </div>
 
-  <script src=""></script>
+  <script src="./js/wheater.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
